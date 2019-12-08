@@ -126,3 +126,235 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@media only screen and (min-width: 1240px) {
+  #Wrapper {
+    max-width: 1240px;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+h4 {
+  font-size: 1.8rem;
+  padding-bottom: 10px;
+  font-weight: 400i;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+a:visited {
+  color: #263A59;
+}
+.header-wrapper {
+  background-color: white;
+  width: 100%;
+}
+.header-wrapper header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+@media (max-width: 768px) {
+  .header-wrapper header {
+    height: 80px;
+  }
+}
+.header-wrapper header .nav-wrapper {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  color: #263A59;
+  text-decoration: none;
+  height: 80px;
+}
+.header-wrapper header .nav-wrapper img {
+  padding: 3%;
+  width: 25%;
+}
+.header-wrapper header .nav-wrapper .main-nav {
+  width: 50%;
+}
+.header-wrapper header .nav-wrapper ul#myLinks {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  color: #263A59;
+}
+.header-wrapper header .nav-wrapper ul#myLinks a {
+  color: black;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.header-wrapper header .nav-wrapper ul#myLinks a:visited {
+  color: #263A59;
+}
+.header-wrapper header .nav-wrapper ul#myLinks a:hover {
+  color: #E42127;
+}
+.header-wrapper header .nav-wrapper a {
+  text-decoration: none;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+  .nav-wrapper {
+    display: flex;
+    width: 100%;
+  }
+  .header-wrapper header .nav-wrapper .main-nav {
+    width: 100%;
+  }
+  .main-nav {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: calc(120vh - 50px);
+    background: #575972;
+    top: 50px;
+    left: 0;
+    transition: 0.5%;
+    flex-direction: column;
+  }
+  .main-nav.toggleCls {
+    display: flex;
+    flex-direction: column;
+    height: 245px;
+    margin-top: 30px;
+    width: 100%;
+  }
+  #myLinks {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    padding: 5%;
+    color: white;
+    line-height: 3;
+    align-items: center;
+  }
+  .header-wrapper header .nav-wrapper ul#myLinks a:visited {
+    color: white;
+    margin-top: 5px;
+    text-align: center;
+  }
+  .header-wrapper header .nav-wrapper ul#myLinks a:hover {
+    color: #E46428;
+  }
+  a:link {
+    color: white;
+  }
+  a:visted {
+    color: white;
+  }
+  a:active {
+    color: #E46428;
+  }
+}
+.header-wrapper header .nav-wrapper ul#myLinks {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.hamIcon {
+  float: right;
+  line-height: 50px;
+  font-size: 2rem;
+  cursor: pointer;
+  display: block;
+}
+@media (min-width: 769px) {
+  .hamIcon {
+    display: none;
+  }
+  .main-nav {
+    display: initial;
+  }
+}
+.mailto-wrapper {
+  position: relative;
+}
+.mailto-message {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  position: absolute;
+  display: none;
+  width: auto;
+  white-space: nowrap;
+  font-size: 12px;
+  background-color: black;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+.mailto-message:after {
+  content: '';
+}
+.mailto-wrapper:hover .mailto-message {
+  display: block;
+}
+body {
+  padding: 3em;
+  line-height: 1.5;
+}
+h2 {
+  font-weight: 400;
+}
+.about-wrapper {
+  display: flex;
+  flex-direction: row;
+  background: #626262;
+  align-items: center;
+}
+h1 {
+  font-size: 3rem;
+}
+.headshot {
+  padding: 5%;
+}
+.headshot img {
+  width: 100%;
+}
+.content {
+  color: white;
+  line-height: 1.5;
+  padding: 5%;
+  width: 65%;
+}
