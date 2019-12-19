@@ -396,10 +396,18 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
 }
-.skills ul#skillsIcons {
-  padding: 5% 15%;
-  display: flex;
-  justify-content: space-evenly;
-  color: #E46428;
-  font-size: 5rem;
+
+.skills{
+  /* background: blue; */
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  border-bottom: #dddddd solid 1px;
+  background: #fafafa;
+  /* padding: 6em 5%; */
 }
+    ul#skillsIcons {
+      padding: 5% 15%;
+      display: flex;
+      justify-content: space-evenly;
+      color: #E46428;
+      font-size: 5rem;
+    }
